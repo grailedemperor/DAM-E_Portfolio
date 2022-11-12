@@ -1,20 +1,30 @@
-import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import AboutMe from './components/AboutMe';
-import Contact from './components/Contact';
-import Home from './components/Home';
+import './App.css';
+import Banner from './components/Banner.js'
+import Resume from './components/Resume.js'
+import Footer from './components/Footer.js'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
-
+import Contact from './components/Contact';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AboutMe from './components/AboutMe';
+import './App.css';
+import NavBar from './components/Navbar';
 
 function App() {
-  return(
-    <body>
-      <Header />
-      <Home />
-      <Footer /> 
-    </body>
+  return (
+    <div className="App">
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path='/' element ={<Banner />} />
+          <Route path='/aboutme' element={<AboutMe />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
