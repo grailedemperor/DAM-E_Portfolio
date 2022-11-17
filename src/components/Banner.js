@@ -12,8 +12,8 @@ const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ["Business Analyst", "Web Developer", "Software Engineer"];
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100)
-  const period = 300;
+  const [delta, setDelta] = useState(360 - Math.random() * 360)
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -58,14 +58,14 @@ const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <div className='static'>
-                  <span className="tagline">Welcome to DAM-E'S World</span>
+                  <span className="tagline">Welcome to DAM-E'S World 🌍 </span>
                   </div>
                   <div>
                   <h1>{``}
                     <span className="wrap">{text}</span></h1>
                   </div>
                   <div className='static'>
-                  <p> Emmanuel...E...Dam(Duh-Ahh-M)..."Your Grace"... <br></br>I can be referenced by many names. </p>
+                  <p> Emmanuel...E...Dam(Duh-Ahh-M)..."Your Grace 👑"... <br></br>I can be referenced by many names. </p>
                   <button onClick={navigateToContact} className="vvd"><span>Holla @ Me!<ArrowRightCircle size={25} /></span></button>
                   </div>
                 </div>}

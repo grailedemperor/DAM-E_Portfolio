@@ -13,7 +13,7 @@ const AboutMe = () => {
 
   return (
     <div className="about-me">
-      <a> AVATAR </a>
+      <a> 👑 AVATAR </a>
       <br></br>
       <br></br>
       <br></br>
