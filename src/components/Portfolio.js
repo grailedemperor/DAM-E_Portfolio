@@ -2,6 +2,12 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "./ProjectCard.js"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import HittingTheTown from '../assets/img/hittingthetown.png'
+import TechBlog from '../assets/img/techblog.png'
+import PWA from '../assets/img/pwa.png'
+import EndlessBooks from '../assets/img/endlessbooks.png'
+import BookSearch from '../assets/img/googlebooksearch.png'
+import NoteTaker from '../assets/img/notetaker.png'
 import projImg1 from '../assets/img/project-img1.png'
 import projImg2 from '../assets/img/project-img2.png'
 import projImg3 from '../assets/img/project-img3.png'
@@ -10,62 +16,118 @@ import heroku from '../assets/img/heroku-icon.svg'
 
 const Portfolio = () => {
 
-  const projects = [
+  const CBprojects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      gitUrl: "", 
-      deployUrl:"", 
-      githubIcon: github, 
-      deployIcon: heroku
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      gitUrl: "", 
-      deployUrl:"", 
-      githubIcon: github, 
-      deployIcon: heroku
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      gitUrl: "", 
-      deployUrl:"", 
-      githubIcon: github, 
-      deployIcon: heroku
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      gitUrl: "", 
-      deployUrl:"", 
+      title: "Endless Books",
+      description: "MERN",
+      imgUrl: EndlessBooks,
+      gitUrl: "https://github.com/grailedemperor/EndlessBooks", 
+      deployUrl:"https://fierce-brushlands-14439.herokuapp.com/", 
       githubIcon:github, 
       deployIcon: heroku
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      gitUrl: "", 
-      deployUrl:"", 
+      title: "Tech Blog",
+      description: "MVC",
+      imgUrl: TechBlog,
+      gitUrl: "https://github.com/grailedemperor/tech-blog", 
+      deployUrl:"https://blogoftech-app.herokuapp.com/", 
       githubIcon: github, 
       deployIcon: heroku
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      gitUrl: "", 
-      deployUrl:"", 
+      title: "PWA Text Editor",
+      description: "PWA",
+      imgUrl: PWA,
+      gitUrl: "https://github.com/grailedemperor/PWA-Text-Editor", 
+      deployUrl:"https://ge-pwa-text-editor.herokuapp.com/", 
+      githubIcon: github, 
+      deployIcon: heroku
+    },
+    {
+      title: "Hitting The Town",
+      description: "Design & API Integration",
+      imgUrl: HittingTheTown,
+      gitUrl: "https://github.com/margotcooper/never-leaving", 
+      deployUrl:"https://margotcooper.github.io/never-leaving/",   
+      githubIcon: github, 
+      deployIcon: heroku
+    },
+    {
+      title: "Book Search Engine",
+      description: "MERN, Apollo Server & GraphQL",
+      imgUrl: BookSearch,
+      gitUrl: "https://github.com/grailedemperor/BookSearchEngine", 
+      deployUrl:"https://googlebooks-searchengine-app.herokuapp.com/", 
+      githubIcon: github, 
+      deployIcon: heroku
+    },
+    {
+      title: "Note Taker Plus",
+      description: "Express.js",
+      imgUrl: NoteTaker,
+      gitUrl: "https://github.com/grailedemperor/NoteTakerPlus", 
+      deployUrl:"https://notetakerplus-app.herokuapp.com/", 
       githubIcon: github, 
       deployIcon: heroku
     },
   ];
+  const Fprojects = [
+    {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg1,
+    gitUrl: "", 
+    deployUrl:"", 
+    githubIcon:github, 
+    deployIcon: heroku
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg2,
+    gitUrl: "", 
+    deployUrl:"", 
+    githubIcon: github, 
+    deployIcon: heroku
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg3,
+    gitUrl: "", 
+    deployUrl:"", 
+    githubIcon: github, 
+    deployIcon: heroku
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg1,
+    gitUrl: "", 
+    deployUrl:"", 
+    githubIcon:github, 
+    deployIcon: heroku
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg2,
+    gitUrl: "", 
+    deployUrl:"", 
+    githubIcon: github, 
+    deployIcon: heroku
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg3,
+    gitUrl: "", 
+    deployUrl:"", 
+    githubIcon: github, 
+    deployIcon: heroku
+  },
+];
 
   return (
     <section className="project" id="project">
@@ -93,7 +155,7 @@ const Portfolio = () => {
                       <Tab.Pane eventKey="first">
                         <Row>
                           {
-                            projects.map((project, index) => {
+                            CBprojects.map((project, index) => {
                               return (
                                 <ProjectCard
                                   key={index}
@@ -107,7 +169,7 @@ const Portfolio = () => {
                       <Tab.Pane eventKey="second">
                         <Row>
                           {
-                            projects.map((project, index) => {
+                            Fprojects.map((project, index) => {
                               return (
                                 <ProjectCard
                                   key={index}
@@ -121,7 +183,7 @@ const Portfolio = () => {
                       <Tab.Pane eventKey="third">
                         <Row>
                           {
-                            projects.map((project, index) => {
+                            Fprojects.map((project, index) => {
                               return (
                                 <ProjectCard
                                   key={index}

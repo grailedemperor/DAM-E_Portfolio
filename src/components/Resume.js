@@ -3,7 +3,7 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
+import Res from "../assets/resumes/Emmanuel_Delu_Resume.pdf"
 
 const Resume = () => {
 
@@ -35,7 +35,7 @@ const Resume = () => {
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
                         <p>See my skills ranked and scored below.<br></br> <br></br> | Business Analysis skills on top | <br></br><br></br>| Development skills on the bottom |</p>
-                        <a href="resume-loc" class='download' download>Download My Resume!</a> 
+                        <a href={Res} class='download' download>Download My Resume!</a> 
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider business-analyst">
                             <div className="item">
                                 <img src={meter1} alt="Image1" />
@@ -50,8 +50,20 @@ const Resume = () => {
                                 <h5>Excel</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image4" />
+                                <img src={meter3} alt="Image3" />
+                                <h5>Google Suite</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image4" />
                                 <h5>SQL</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image4" />
+                                <h5>Access</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image4" />
+                                <h5>Outlook</h5>
                             </div>
                         </Carousel>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider web-dev" >
@@ -66,6 +78,22 @@ const Resume = () => {
                             <div className="item">
                                 <img src={meter3} alt="Image3" />
                                 <h5>JavaScript</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Image3" />
+                                <h5>Node.js</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Image3" />
+                                <h5>Express.js</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image2" />
+                                <h5>React</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image2" />
+                                <h5>Handlebars</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image4" />

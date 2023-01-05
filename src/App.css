@@ -83,7 +83,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 .slytherin{
-  width: 93%;
+  width: 83%;
 }
 nav.navbar {
   padding: 24px 0;
@@ -264,7 +264,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
 
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/north-lights.webp');
+  background-image: url('./assets/img/background-final.JPG');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -289,7 +289,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #000000;
+  color: #ffffff;
   font-weight: 1000;
   font-size: 24px;
   letter-spacing: 0.8px;
@@ -297,7 +297,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
 }
 .banner button {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 24px;
   margin-top: 60px;
@@ -334,21 +334,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ About Me Css ************/
 .about-me p {
-  color: #000000;
+  color: #ffffff;
+  -webkit-text-stroke: .5px black;
   font-weight: 1000;
   font-size: 24px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
   padding-left: 200px;
-  padding-right: 200px;
+  padding-right: 50px;
 }
-.about-me a {
+#name {
   font-size: 35px;
   letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin-left: 400px;
+  line-height: .5em;
+  margin-left: 600px;
   font-weight: 1000;
+  -webkit-text-stroke: .5px black;
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
   
 }
 .about-me button:hover svg {
@@ -358,24 +366,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .about-me {
   margin-top: 0px;
   padding: 200px 0 300px 0;
-  background-image: url('./assets/img/north-lights.webp');
+  background-image: url('./assets/img/background-final.JPG');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   
 }
 .aboutme-list{
-  color: #000000;
-  font-size: 30px;
+  color: #ffffff;
+  font-size: 27px;
   letter-spacing: 0.8px;
-  line-height: 1.5em;
-  width: 96%;
-  margin-left: 300px;
-  font-weight: 1000;
+  width: 90%;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-weight: 500;
+}
+
+.aboutme-list-item{
+  padding-right: 50px;
+  line-height: 3.5rem;
+  -webkit-text-stroke: .5px black;
 }
 
 .about-me button {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 1000;
   font-size: 30px;
   margin-top: 60px;
@@ -385,9 +399,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
   padding-left: 130px;
 }
+
+.sports{
+  width: 6.4%;
+}
 /************ Skills Css ************/
 #skills{
-  background-image: url('./assets/img/north-lights.webp');
+  background-image: url('./assets/img/background-final.JPG');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -396,7 +414,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 110px 0;
   position: relative;
-  margin-top: ;
 }
 .skill-bx {
   background: #151515;
@@ -454,7 +471,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-image: url('./assets/img/north-lights.webp');
+  background-image: url('./assets/img/background-final.JPG');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -558,7 +575,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 50%;
   opacity: 1;
 }
-.proj-txtx h4 {
+.proj-txtx h1 h3 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -579,14 +596,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 .icons{
-  width: 50px;
-  height: 50px
+  width: 35px;
+  height: 35px
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   
-  background-image: url('./assets/img/north-lights.webp');
+  background-image: url('./assets/img/background-final.JPG');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;

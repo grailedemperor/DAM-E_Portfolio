@@ -7,7 +7,6 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './components/AboutMe';
-import './App.css';
 import NavBar from './components/Navbar';
 
 function App() {
